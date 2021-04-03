@@ -30,6 +30,14 @@ def countdown(i):  # обратный отсчет
         print(i)
 
 
+def countdownNEW(i):  # обратный отчет New
+    print(i)
+    if i <= 0:
+        return
+    else:
+        countdownNEW(i - 1)
+
+
 def countdown1(i):
     print(i)
     if i <= 0:
@@ -38,4 +46,4 @@ def countdown1(i):
         countdown(i)
 
 
-countdown1(4)
+countdownNEW(5)
