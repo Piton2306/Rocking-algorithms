@@ -13,8 +13,9 @@ def look_for_key(main_box):  # ищи ключ(основной бокс)
                 print('нашел ключ')
 
 
-# рекурсия
 def look_for_keys(box):
+    """Рекурсия с коробкой."""
+
     for item in box:
         if item.is_a_box():  # предмет - это коробка
             look_for_keys(item)
@@ -22,7 +23,8 @@ def look_for_keys(box):
             print('Ключ найден')
 
 
-def countdown(i):  # обратный отсчет
+def countdown(i):
+    """обратный отсчет."""
     while True:
         i -= 1
         if i == -100:
@@ -30,7 +32,8 @@ def countdown(i):  # обратный отсчет
         print(i)
 
 
-def countdownNEW(i):  # обратный отчет New
+def countdownNEW(i):
+    """обратный отчет ver2"""
     print(i)
     if i <= 0:
         return
@@ -46,4 +49,10 @@ def countdown1(i):
         countdown(i)
 
 
-countdownNEW(5)
+def fact(x):
+    '''Рекурсия стэка'''
+    print(x)
+    if x == 1:
+        return 1
+    else:
+        return x * fact(x - 1)

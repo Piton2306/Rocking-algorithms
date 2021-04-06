@@ -1,4 +1,5 @@
 def quick_sort(array):
+    """Сортировка списка."""
     if len(array) < 2:
         return array
     else:
@@ -20,8 +21,8 @@ from time import sleep
 
 
 def print_item_sleep(list):
+    """Выполнение цикла  через время. """
     for items in list:
         sleep(1)
 
         print(items,end=',')
-print_item_sleep(x)
