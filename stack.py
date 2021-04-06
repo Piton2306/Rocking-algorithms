@@ -10,6 +10,3 @@ def greet2(name):
 
 def bye():
     print('ok bye')
-
-
-greet('name')
